@@ -1,12 +1,13 @@
 export class Button {
+    constructor() {
+        this.counterContainer = document.createElement('div');
+    }
 
-    Menu() {
-        const counterContainer = document.createElement('div');
-
-        counterContainer.innerHTML += `
+    render() {
+        this.counterContainer.innerHTML += `
             <button> enviar </button>
         `
 
-        return counterContainer;
+        return this.counterContainer;
     }
 }

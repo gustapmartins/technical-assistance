@@ -1,4 +1,6 @@
+import { Card } from '../Components/Card.js';
 import { Home } from '../Pages/Home.js'
+import { GlobalStyles } from '../Styles/Global.styles.js';
 
 function render(component, container) {
     container.innerHTML = '';
@@ -7,13 +9,17 @@ function render(component, container) {
 
 function App() {
     const appContainer = document.createElement('main');
+    new GlobalStyles().applyStyles();
 
-    const buttonComponent = new Home();
+    const HomePage = new Home();
     
-    appContainer.appendChild(buttonComponent.render());
+    appContainer.appendChild(HomePage.render());
     
     return appContainer;
 }
 
+
+
 const root = document.getElementById('root');
+
 render(App(), root);

@@ -1,4 +1,7 @@
-import { Button } from "../Components/Button.js";
+import { Banner } from "../Components/Banner.js";
+import { Card } from "../Components/Card.js";
+import { Footer } from "../Components/Footer.js";
+import { Header } from "../Components/Header.js";
 
 export class Home {
     constructor() {
@@ -6,15 +9,20 @@ export class Home {
     }
 
     render() {
-        const buttonComponent = new Button().Menu();
+        const HeaderComponent = new Header().render();
+        const CardComponent = new Card("https://source.unsplash.com/300x225/?wave", "Card").render();
+        const FooterComponent = new Footer().render();
+        const BannerComponent = new Banner().render();
 
         this.homeContainer.innerHTML = `
-           <header>
-              ${buttonComponent.outerHTML}
+           <div>
+              ${HeaderComponent.outerHTML}
+              ${BannerComponent.outerHTML}
               <div>
-                começo do projeto
+                ${CardComponent.outerHTML}
               </div>
-           </header> 
+              ${FooterComponent.outerHTML}
+           </div> 
         `;
 
         return this.homeContainer;
