@@ -9,15 +9,26 @@ export class Header {
     render() {
         this.headerContainer.innerHTML = `
             <div class="header">
-                <div class="logo">My App</div>
-                <ul class="nav">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                </ul>
+                <div class="title-tech">
+                    Tech 
+                    <span class="title">Assistence</span> 
+                </div>
+                <div class="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
             </div>
         `;
+
+        // </div>
+        //             <ul class="menu-list">
+        //                 <li><a href="#">Home</a></li>
+        //                 <li><a href="#">About</a></li>
+        //                 <li><a href="#">Services</a></li>
+        //                 <li><a href="#">Contact</a></li>
+        //             </ul>
+        //         </div>
 
         new HeaderStyle().applyStyles(this.headerContainer);
 

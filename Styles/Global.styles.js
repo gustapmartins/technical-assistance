@@ -10,7 +10,7 @@ export class GlobalStyles {
                 padding: 0;
             }
             body {
-                font-family: Arial, sans-serif;
+                font-family: Poppins;
             }
             ul, ol {
                 list-style: none;

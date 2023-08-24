@@ -8,33 +8,74 @@ export class HeaderStyle {
     applyStyles(component) {
         this.style.innerHTML = `
             .header {
-                background-color: #333;
+                background-color: #1E222A;
                 color: white;
-                padding: 10px 20px;
+                padding: 10px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
             }
 
-            .logo {
+            .title-tech {
                 font-size: 1.5rem;
+                font-weight: 600;
+                color: #fff;
             }
 
-            .nav {
-                list-style: none;
-                display: flex;
+            .title {
+                font-weight: 600;
+                color: #71D5DB;
             }
 
-            .nav-item {
-                margin-right: 10px;
-            }
-
-            .nav-link {
-                text-decoration: none;
+            .menu {
+                position: fixed;
+                background-color: #333;
                 color: white;
-            }
+                width: 250px;
+                height: 100%;
+                left: -250px;
+                top: 0;
+                transition: left 0.3s ease-in-out;
+              }
+              
+              .menu.active {
+                left: 0;
+              }
+              
+              .menu-toggle {
+                cursor: pointer;
+                padding: 10px;
+              }
+              
+              .bar {
+                width: 25px;
+                height: 3px;
+                background-color: white;
+                margin: 5px 0;
+              }
+              
+              .menu-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+              }
+              
+              .menu-list li {
+                padding: 15px;
+                border-bottom: 1px solid #444;
+              }
+              
+              .menu-list li a {
+                color: white;
+                text-decoration: none;
+                transition: color 0.3s ease-in-out;
+              }
+              
+              .menu-list li a:hover {
+                color: #ddd;
+              }
         `;
-        
+
         component.appendChild(this.style);
     }
 }

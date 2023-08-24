@@ -11,12 +11,13 @@ export class CardStyle {
                 padding: 20px;
                 display: flex;
                 align-items: center;
+                margin: 10px;
             }
 
             .card-image {
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
+                width: 50%;
+                height: 380px;
+                border-radius: 8px;
                 overflow: hidden;
                 margin-right: 15px;
             }
