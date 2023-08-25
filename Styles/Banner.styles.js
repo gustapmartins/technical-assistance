@@ -16,14 +16,23 @@ export class BannerStyle {
                 padding: 20px 0;
             }
 
+            .box{
+                width: 500px;
+                margin-left: 25px;
+            }
+
             .banner-title-code {
-                color: #fff;
-                font-weight: 200;
+                color: #D4D4D4;
+                font-weight: 50;
             }
 
             .banner-title {
-                font-size: 24px;
+                width: ;
+                word-wrap: break-word;
+                font-size: 28px;
+                margin-top: 8px;
                 margin-bottom: 20px;
+                font-weight: 600;
                 color: #fff;
             }
 
@@ -31,6 +40,20 @@ export class BannerStyle {
                 padding: 12px;
                 border-radius: 8px;
                 border: none;
+                cursor: pointer;
+                font-weight: 700;
+                box-shadow: -5px 5px 10px #0F131A;
+            }
+
+            .btn-blue {
+                color: #fff; 
+                background-color: #62C8CE;
+                margin-right: 10px;
+            }
+
+            .btn-purple {
+                color: #fff;
+                background-color: #AC56B2;
             }
         `;
     }

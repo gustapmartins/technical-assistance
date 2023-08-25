@@ -9,11 +9,17 @@ export class Banner {
     render() {
         this.bannerContainer.innerHTML = `
             <div class="banner">
-                <h2 class="banner-title-code">Welcome to Our Website</h2>
-                <h1 class="banner-title">Welcome to Our Website</h1>
-                <div>
-                    <button class="btn">SERVIÇOS</button>
-                    <button class="btn">ORÇAMENTO</button>
+                <div class="box">
+                    <h2 class="banner-title-code">
+                        < TECH_ASSISTENCE >
+                    </h2>
+                    <h1 class="banner-title">
+                        AQUI DESENVOLVEMOS O BRILHO DO SEU HARDWARE
+                    </h1>
+                    <div>
+                        <button class="btn btn-blue">SERVIÇOS</button>
+                        <button class="btn btn-purple">ORÇAMENTO</button>
+                    </div>
                 </div>
             </div>
         `;
