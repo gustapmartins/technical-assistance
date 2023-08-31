@@ -1,10 +1,11 @@
 import { CardStyle } from '../Styles/Card.styles.js'
 
 export class Card {
-    constructor(imageUrl, description) {
-        this.cardContainer = document.createElement('div');
+    constructor(imageUrl, title, description) {
+        this.cardContainer = document.createElement('section');
         this.imageUrl = imageUrl;
         this.description = description;
+        this.title = title;
     }
 
     render() {
@@ -14,7 +15,8 @@ export class Card {
                     <img src="${this.imageUrl}" alt="Client Image">
                 </div>
                 <div class="card-description">
-                    ${this.description}
+                    <span>${this.title}</span>
+                    <span>${this.description}</span>
                 </div>
             </section>
         `;

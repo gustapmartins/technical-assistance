@@ -31,6 +31,7 @@ export class CardStyle {
             .card-description {
                 font-size: 16px;
                 line-height: 1.4;
+                
             }
         `;
     }
