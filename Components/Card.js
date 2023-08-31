@@ -9,14 +9,14 @@ export class Card {
 
     render() {
         this.cardContainer.innerHTML = `
-            <div class="card">
+            <section class="card">
                 <div class="card-image">
                     <img src="${this.imageUrl}" alt="Client Image">
                 </div>
                 <div class="card-description">
                     ${this.description}
                 </div>
-            </div>
+            </section>
         `;
 
         new CardStyle().applyStyles(this.cardContainer);

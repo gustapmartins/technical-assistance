@@ -7,7 +7,7 @@ export class Footer {
 
     render() {
         this.footerContainer.innerHTML = `
-            <div class="footer">
+            <footer class="footer">
                <ul class="footer-list">
                     <li class="list">
                         <a class="link" href="#">
@@ -29,7 +29,7 @@ export class Footer {
                         <span class="list-bottom">Phone</span>
                     </li>
                </ul>
-            </div>
+            </footer>
         `;
 
         new FooterStyle().applyStyles(this.footerContainer);
