@@ -12,7 +12,7 @@ export class BannerStyle {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                height: 280px;
+                height: 580px;
                 padding: 20px 0;
             }
 
