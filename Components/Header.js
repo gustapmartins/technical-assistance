@@ -11,7 +11,7 @@ export class Header {
             <header class="header">
                 <div class="title-tech">
                     Tech 
-                    <span class="title">Assistence</span> 
+                    <span class="title-assistence">Assistence</span> 
                 </div>
                 <div class="menu-toggle">
                     <div class="bar"></div>
@@ -19,8 +19,8 @@ export class Header {
                     <div class="bar"></div>
                 </div>
 
-                </div>
-                    <ul class="menu-list">
+                <div class="menu-list">
+                    <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Services</a></li>

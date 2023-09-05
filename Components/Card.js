@@ -15,8 +15,8 @@ export class Card {
                     <img src="${this.imageUrl}" alt="Client Image">
                 </div>
                 <div class="card-description">
-                    <span class="description">${this.title}</span>
-                    <span>${this.description}</span>
+                    <span class="title">${this.title}</span>
+                    <span class="description">${this.description}</span>
                 </div>
             </section>
         `;

@@ -22,7 +22,7 @@ export class HeaderStyle {
                 color: #fff;
             }
 
-            .title {
+            .title-assistence {
                 font-weight: 600;
                 color: #71D5DB;
             }
@@ -55,6 +55,7 @@ export class HeaderStyle {
               }
               
               .menu-list {
+                display: none;
                 list-style: none;
                 padding: 0;
                 margin: 0;

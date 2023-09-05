@@ -5,13 +5,13 @@ export class CardStyle {
         this.style = document.createElement('style');
         this.style.innerHTML = `
             .card {
-                background-color: #f7f7f7;
+                width: 95%;
                 border-radius: 8px;
-                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
                 padding: 20px;
                 display: flex;
                 align-items: center;
                 margin: 10px;
+                margin: auto;
             }
 
             .card-image {
@@ -29,8 +29,25 @@ export class CardStyle {
             }
 
             .card-description {
+                width: 50%;
+                height: 380px;
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: column;
                 font-size: 16px;
                 line-height: 1.4;
+            }
+            
+            .title {
+                font-size: 2.5rem;
+                color: #4F4848;
+                font-weight: 600;
+            }
+
+            .description{
+                font-size: 1.4rem;
+                color: #4F4848;
+                opacity: 0.7;
             }
         `;
     }
