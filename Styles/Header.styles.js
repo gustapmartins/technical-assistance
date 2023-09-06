@@ -39,7 +39,7 @@ export class HeaderStyle {
               }
               
               .menu.active {
-                left: 0;
+                display: flex;
               }
               
               .menu-toggle {
@@ -56,8 +56,11 @@ export class HeaderStyle {
               
               .menu-list {
                 display: none;
+                position: fixed;
                 list-style: none;
                 padding: 0;
+                right: 0;
+                top: 69px;
                 margin: 0;
               }
               

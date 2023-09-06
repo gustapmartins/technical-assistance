@@ -13,7 +13,7 @@ export class CardDepoiment {
             <section class="card-depoiment">
                 <div class="perfil">
                     <img src="${this.imageUrl}" alt="Client Image">
-                    <span class="depoiment-title">${this.name}</span>   
+                    <span class="perfil-name">${this.name}</span>   
                 </div>
                 <div class="card-depoiment-description">
                     <span class="depoiment-description">${this.depoiment}</span>

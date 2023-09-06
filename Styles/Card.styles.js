@@ -5,7 +5,6 @@ export class CardStyle {
         this.style = document.createElement('style');
         this.style.innerHTML = `
             .card {
-                width: 95%;
                 border-radius: 8px;
                 padding: 20px;
                 display: flex;
@@ -15,11 +14,10 @@ export class CardStyle {
             }
 
             .card-image {
-                width: 50%;
+                width: 40%;
                 height: 380px;
                 border-radius: 8px;
                 overflow: hidden;
-                margin-right: 15px;
             }
 
             .card-image img {
@@ -36,16 +34,17 @@ export class CardStyle {
                 flex-direction: column;
                 font-size: 16px;
                 line-height: 1.4;
+                padding-left: 2.8rem;
             }
             
             .title {
-                font-size: 2.5rem;
+                font-size: 2rem;
                 color: #4F4848;
                 font-weight: 600;
             }
 
             .description{
-                font-size: 1.4rem;
+                font-size: 1.3rem;
                 color: #4F4848;
                 opacity: 0.7;
             }
