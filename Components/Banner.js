@@ -14,7 +14,7 @@ export class Banner {
                         < TECH_ASSISTENCE >
                     </h2>
                     <h1 class="banner-title">
-                        AQUI DESENVOLVEMOS O BRILHO DO SEU HARDWARE
+                        GUSTAVO LINDO
                     </h1>
                     <div>
                         <button class="btn btn-blue">SERVIÇOS</button>
