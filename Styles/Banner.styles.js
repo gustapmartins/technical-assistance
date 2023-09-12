@@ -34,9 +34,6 @@ export class BannerStyle {
                 margin-bottom: 20px;
                 font-weight: 600;
                 color: #fff;
-                opacity: 0;
-                transform: translateY(2rem);
-                transition: opacity 1s, transform 1s;
             }
 
             .box:hover .banner-title {

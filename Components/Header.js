@@ -7,6 +7,9 @@ export class Header {
     }
 
     render() {
+
+        
+
         this.headerContainer.innerHTML = `
             <header class="header">
                 <div class="title-tech">
@@ -30,7 +33,6 @@ export class Header {
             </header>
         `;
 
-        
 
         new HeaderStyle().applyStyles(this.headerContainer);
 

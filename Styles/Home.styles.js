@@ -11,6 +11,11 @@ export class HomeStyle {
                 justify-content: end;
            }
 
+           
+           .active {
+                display: flex;
+            }
+
            .cards {
                 width: 90%;
                 margin: auto;

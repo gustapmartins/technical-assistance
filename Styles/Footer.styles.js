@@ -19,6 +19,7 @@ export class FooterStyle {
                 margin: 12px;
             }
 
+        
             .list {
                 display: flex; 
                 flex-direction: column;

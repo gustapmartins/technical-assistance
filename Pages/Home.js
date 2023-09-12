@@ -4,6 +4,8 @@ import { CardDepoiment } from "../Components/CardDepoiment.js";
 import { Footer } from "../Components/Footer.js";
 import { Header } from "../Components/Header.js";
 import { HomeStyle } from "../Styles/Home.styles.js";
+import depoimentsData from '../Mock/Depoiments.js';
+import cardsMock from '../Mock/Cards.js';
 
 export class Home {
     constructor() {
@@ -12,10 +14,19 @@ export class Home {
 
     render() {
         const HeaderComponent = new Header().render();
-        const CardComponent = new Card("https://source.unsplash.com/300x225/?wave", "Technology in the fieldof Computer Science", "Lorem Ipssum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of").render();
         const FooterComponent = new Footer().render();
         const BannerComponent = new Banner().render();
-        const CardDepoimentComponent = new CardDepoiment("https://source.unsplash.com/300x225/?wave", "Carolina", "Lorem Ipssum is simply dummy text of the printing and typesetting", "ot only five centuries, but also the leap").render();
+
+
+        let depoimentComponentsHTML = '';
+        let cardsHTML = '';
+        depoimentsData.forEach(data => {
+            depoimentComponentsHTML += new CardDepoiment(data.imageUrl, data.name, data.text).render().outerHTML;
+        });
+
+        cardsMock.forEach(data => {
+            cardsHTML += new Card(data.imageUrl, data.title, data.description).render().outerHTML;
+        });
 
         this.homeContainer.innerHTML = `
            <main>
@@ -23,17 +34,22 @@ export class Home {
               ${BannerComponent.outerHTML}
               <div>
                 <div class="cards">
-                    ${CardComponent.outerHTML}
+                   ${cardsHTML}
                 </div>
                 <div class="depoiments">
-                    ${CardDepoimentComponent.outerHTML}
-                    ${CardDepoimentComponent.outerHTML}
-                    ${CardDepoimentComponent.outerHTML}
+                    ${depoimentComponentsHTML}
                 </div>
               </div>
               ${FooterComponent.outerHTML}
            </main> 
         `;
+
+        const menuToggle = this.homeContainer.querySelector('.menu-toggle');
+        const menuList = this.homeContainer.querySelector('.menu-list');
+
+        menuToggle.addEventListener("click", () => {
+            menuList.classList.toggle('active')
+        })
 
         new HomeStyle().applyStyles(this.homeContainer);
 

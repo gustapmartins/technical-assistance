@@ -8,6 +8,9 @@ export class HeaderStyle {
     applyStyles(component) {
         this.style.innerHTML = `
             .header {
+                position: fixed;
+                width: 100%;
+                box-sizing: border-box;
                 background-color: #1E222A;
                 color: white;
                 padding: 10px;
@@ -38,10 +41,6 @@ export class HeaderStyle {
                 transition: left 0.3s ease-in-out;
               }
               
-              .menu.active {
-                display: flex;
-              }
-              
               .menu-toggle {
                 cursor: pointer;
                 padding: 10px;
@@ -62,6 +61,7 @@ export class HeaderStyle {
                 right: 0;
                 top: 69px;
                 margin: 0;
+                background-color: #131821;
               }
               
               .menu-list li {
