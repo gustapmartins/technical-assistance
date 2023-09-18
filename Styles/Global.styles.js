@@ -15,6 +15,12 @@ export class GlobalStyles {
             ul, ol {
                 list-style: none;
             }
+
+            button {
+                margin: 0;
+                padding: 0;
+            }
+            
             img {
                 max-width: 100%;
                 height: auto;

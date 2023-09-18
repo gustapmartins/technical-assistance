@@ -6,6 +6,7 @@ import { Header } from "../Components/Header.js";
 import { HomeStyle } from "../Styles/Home.styles.js";
 import depoimentsData from '../Mock/Depoiments.js';
 import cardsMock from '../Mock/Cards.js';
+import { Form } from "../Components/Form.js";
 
 export class Home {
     constructor() {
@@ -16,6 +17,7 @@ export class Home {
         const HeaderComponent = new Header().render();
         const FooterComponent = new Footer().render();
         const BannerComponent = new Banner().render();
+        const FormComponent = new Form().render();
 
 
         let depoimentComponentsHTML = '';
@@ -36,7 +38,8 @@ export class Home {
                 <div class="cards">
                    ${cardsHTML}
                 </div>
-                <div class="depoiments">
+                ${FormComponent.outerHTML}
+                <div class="depoiments"> 
                     ${depoimentComponentsHTML}
                 </div>
               </div>
