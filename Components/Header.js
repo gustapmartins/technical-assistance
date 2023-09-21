@@ -7,9 +7,6 @@ export class Header {
     }
 
     render() {
-
-        
-
         this.headerContainer.innerHTML = `
             <header class="header">
                 <div class="title-tech">

@@ -10,7 +10,7 @@ export class Form {
             <div class="container">
                 <div class="form-container">
                     <img src="https://media.istockphoto.com/id/480798670/pt/foto/galáxia-espiral-ilustração-da-via-láctea.jpg?s=612x612&w=0&k=20&c=mxboBErzRYlvSY4CoAa8SREIZ6nTCG3jnoT7Sld8_kg=" alt="Imagem" />
-                    <form>
+                    <form class="form_submit">
                         <h2 class="title_form">ORÇAMENTO</h2>
 
                         <label for="nome">Nome:</label>

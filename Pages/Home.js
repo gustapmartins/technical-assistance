@@ -49,10 +49,33 @@ export class Home {
 
         const menuToggle = this.homeContainer.querySelector('.menu-toggle');
         const menuList = this.homeContainer.querySelector('.menu-list');
-
+        
         menuToggle.addEventListener("click", () => {
             menuList.classList.toggle('active')
-        })
+        });
+
+        const submit = this.homeContainer.querySelector('.form_submit');
+        const nome = this.homeContainer.querySelector('#nome');
+        const email = this.homeContainer.querySelector('#email');
+        const descricao = this.homeContainer.querySelector('#descricao');
+ 
+        submit.addEventListener("submit", (e) => sendForm(e))
+
+        function sendForm(e) {
+            e.preventDefault();
+
+            if(!nome.value && nome.value <= 2) {
+                console.log("invalido")
+            }
+            if(!email.value && email.value <= 2) {
+                console.log("invalido")
+            }
+            if(!descricao.value && descricao.value <= 10) {
+                console.log("invalido")
+            }else {
+                console.log("valido")
+            }
+        }
 
         new HomeStyle().applyStyles(this.homeContainer);
 

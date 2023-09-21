@@ -1,4 +1,3 @@
-import { Card } from '../Components/Card.js';
 import { Home } from '../Pages/Home.js'
 import { GlobalStyles } from '../Styles/Global.styles.js';
 
@@ -17,8 +16,6 @@ function App() {
     
     return appContainer;
 }
-
-
 
 const root = document.getElementById('root');
 
