@@ -54,28 +54,28 @@ export class Home {
             menuList.classList.toggle('active')
         });
 
-        const submit = this.homeContainer.querySelector('.form_submit');
         const nome = this.homeContainer.querySelector('#nome');
         const email = this.homeContainer.querySelector('#email');
         const descricao = this.homeContainer.querySelector('#descricao');
+        const invalidNome = this.homeContainer.querySelector('.invalid-nome');
+        const invalidEmail = this.homeContainer.querySelector('.invalid-email');
+        const invalidDescription = this.homeContainer.querySelector('.invalid-description');
+
  
-        submit.addEventListener("submit", (e) => sendForm(e))
-
-        function sendForm(e) {
-            e.preventDefault();
-
-            if(!nome.value && nome.value <= 2) {
-                console.log("invalido")
-            }
-            if(!email.value && email.value <= 2) {
-                console.log("invalido")
-            }
-            if(!descricao.value && descricao.value <= 10) {
-                console.log("invalido")
-            }else {
-                console.log("valido")
-            }
+        function validateInput(input, errorElement) {
+            input.addEventListener('input', () => {
+                const inputValue = input.value.trim();
+                if (inputValue.length < 10) {
+                    errorElement.style.display = 'flex';
+                } else {
+                    errorElement.style.display = 'none';
+                }
+            });
         }
+        
+        validateInput(nome, invalidNome);
+        validateInput(email, invalidEmail);
+        validateInput(descricao, invalidDescription);
 
         new HomeStyle().applyStyles(this.homeContainer);
 

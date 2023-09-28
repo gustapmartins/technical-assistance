@@ -14,13 +14,16 @@ export class Form {
                         <h2 class="title_form">ORÇAMENTO</h2>
 
                         <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" class="input" required>
+                        <input type="text" id="nome" name="nome" class="input" >
+                        <p class="invalid-nome"> valor invalido </p>
 
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email class="input"" required>
+                        <input type="email" id="email" name="email class="input"" >
+                        <p class="invalid invalid-email"> valor invalido </p>
 
                         <label for="descricao">Descrição:</label>
-                        <textarea id="descricao" name="descricao " class="input" rows="4" required></textarea>
+                        <textarea id="descricao" name="descricao " class="input" rows="4" ></textarea>
+                        <p class="invalid invalid-description"> valor invalido </p>
 
                         <button type="submit">Enviar</button>
                     </form>

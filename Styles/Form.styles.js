@@ -13,11 +13,32 @@ export class FormStyle {
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
-                width: 65%;
+                width: 70%;
                 height: 580px;
                 box-sizing: border-box;
                 background-color: #1E222A;
                 border-radius: 15px;
+            }
+
+            .invalid-nome {
+                color: red;
+                font-size: 0.8rem;
+                padding-top: 5px;
+                display: none;
+            }
+
+            .invalid-email{
+                color: red;
+                font-size: 0.8rem;
+                padding-top: 5px;
+                display: none;
+            }
+
+            .invalid-description{
+                color: red;
+                font-size: 0.8rem;
+                padding-top: 5px;
+                display: none;
             }
 
             .form-container img {
@@ -48,7 +69,6 @@ export class FormStyle {
             .form-container button {
                 width: 100%;
                 padding: 10px;
-                margin-bottom: 10px;
                 border: 1px solid #ccc;
                 border-radius: 5px;
                 box-sizing: border-box;
